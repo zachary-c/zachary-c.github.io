@@ -1,0 +1,46 @@
+body {
+	text-align:center;
+}
+h1 {
+	color:darkgray;
+	font-family:Arial;
+}
+ul {
+	background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	list-style-type: none;
+}
+
+li {
+	color:white;
+}
+
+li a {
+	display: block;
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color:#333333;
+}
+.cute {
+	background-color: green;
+	padding: 10px;
+	display:block;
+	color: white;
+	text-align: left;
+	text-decoration: none;
+}
+.cute:hover {
+	background-color:red;
+}
+.extracute {
+	background-color:red;
+	text-align:right;
+}
