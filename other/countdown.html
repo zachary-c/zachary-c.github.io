@@ -6,13 +6,15 @@
 <body>
 
 <h1 id="leaving"></h1>
+<h1 id="date"></h1>
 
 <script>
-	var d = new Date("Aug 01 2018")
-	var t = new Date()
-	var x = (d - t)/86400000
-	var s = "Spencer leaves in " + x.toFixed(0) +  " days"
+	var d = new Date("Aug 01 2018");
+	var t = new Date();
+	var x = (d - t)/86400000;
+	var s = "Spencer leaves in " + x.toFixed(0) +  " days";
 	document.getElementById("leaving").innerHTML = s;
+	document.getElementById("date").innerHTML = Date();
 </script>
 
 </body>
