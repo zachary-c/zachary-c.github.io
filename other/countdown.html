@@ -5,8 +5,8 @@
 </head>
 <body>
 
-<h1 id="leaving"></h1>
 <h1 id="date"></h1>
+<h1 id="leaving"></h1>
 
 <script>
 	var d = new Date("Aug 01 2018");
@@ -14,7 +14,8 @@
 	var x = (d - t)/86400000;
 	var s = "Spencer leaves in " + x.toFixed(0) +  " days";
 	document.getElementById("leaving").innerHTML = s;
-	document.getElementById("date").innerHTML = Date();
+	var today = "The date is " + Date();
+	document.getElementById("date").innerHTML = today;
 </script>
 
 </body>
