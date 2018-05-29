@@ -19,13 +19,14 @@ a:hover {
 	color:brown;
 }
 table, th, td {
-	table-layout: fixed;
+	table-layout: auto;
 	margin: 0 auto;
 	border: 1px solid black;
 	style:width:50%;
 }
 th {
 	padding:2px;
+	font-size:80%;
 }
 td {
 	padding:2px;
