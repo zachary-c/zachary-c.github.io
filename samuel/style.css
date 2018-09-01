@@ -1,0 +1,33 @@
+body {
+	/*background-color:powderblue;*/
+	text-align: center;
+}
+h1 {color:rgb(43, 29, 14);}
+h3 {
+	color:rgb(43, 29, 14);
+}
+a:link {
+	color:green;
+}
+a:visited {
+	color:blue;
+}
+a:unvisited{
+	color:red;
+}
+a:hover {
+	color:brown;
+}
+table, th, td {
+	table-layout: fixed;
+	margin: 0 auto;
+	border: 1px solid black;
+	style:width:50%;
+}
+th {
+	padding:5px;
+}
+td {
+	padding:5px;
+	wdith: 20%;
+}
