@@ -12,12 +12,14 @@
 
 <script>
 	var d = new Date("Dec 05 2018");
-	var h = new Date("Jun 23 2018")
+	var h = new Date("Sep 01 2019")
 	var t = new Date();
 	var x = (d - t)/86400000;
 	var z = (h - t)/86400000;
 	var s =  + x.toFixed(1) + " days until ????";
 	document.getElementById("leaving").innerHTML = s;
+	var y =  + x.toFixed(1) + " days until ????";
+	document.getElementById("returning").innerHTML = y;
 	var today = "The date is " + Date();
 	document.getElementById("date").innerHTML = today;
 </script>
