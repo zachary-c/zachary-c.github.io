@@ -21,14 +21,18 @@ a:hover {
 table, th, td {
 	table-layout: auto;
 	margin: 0 auto;
-	border: 1px solid black;
 	style:width:50%;
 }
+table {
+	border:1px solid black;
+}
 th {
+	border:1px solid black;
 	padding:2px;
 	font-size:80%;
 }
 td {
+	border:1px solid black;
 	padding:2px;
 	wdith: 20%;
 }
@@ -49,4 +53,9 @@ td {
 }
 #march {
 	background-color: violet;
+}
+#header {
+	border: 1px solid white;
+	width:80%;
+	padding:5px;
 }
