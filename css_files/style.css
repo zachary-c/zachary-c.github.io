@@ -36,15 +36,7 @@ td {
 	padding:2px;
 	wdith: 20%;
 }
-#june {
-	background-color: lightblue;
-}
-#july {
-	background-color: orange;
-}
-#august {
-	background-color: red;
-}
+
 #jan {
 	background-color: lightgreen;
 }
@@ -53,6 +45,24 @@ td {
 }
 #march {
 	background-color: violet;
+}
+#april {
+	background: aqua;
+}
+#may {
+	background: orange;
+}
+#june {
+	background: crimson;
+}
+#june1 {
+	background-color: lightblue;
+}
+#july {
+	background-color: orange;
+}
+#august {
+	background-color: red;
 }
 #header {
 	border: 1px solid white;
