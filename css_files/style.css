@@ -50,7 +50,7 @@ td {
 	background: aqua;
 }
 #may {
-	background: orange;
+	background: lime;
 }
 #june {
 	background: crimson;
@@ -59,10 +59,13 @@ td {
 	background-color: lightblue;
 }
 #july {
-	background-color: orange;
+	background-color: yellow;
 }
 #august {
-	background-color: red;
+	background-color: orange;
+}
+#september {
+	background-color: purple;
 }
 #header {
 	border: 1px solid white;
