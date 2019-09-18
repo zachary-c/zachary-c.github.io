@@ -7,9 +7,6 @@ body {
 }
 table {
 	width:100%;
-	border:0 
-	cellspacing:0; 
-	cellpadding:0;
 	table-layout:fixed;
 }
 table, th, td {
@@ -24,10 +21,40 @@ th, td {
 .verse, .index{
 	font-style:italic;
 	font-family:cursive;
-	font-size:4.5vw;
 	font-weight:bold;
 }
 
+@media screen and (max-width:549px) {
+	.wed {
+		font-size:2.5vw;
+	}
+	.verse, .index {
+		font-size:4vw;
+	}
+	h2 {
+		font-size:5vw;
+	}
+}
+
+@media screen and (min-width:400px) and (max-width:549px){
+	.verse, .index {
+		font-size:13pt;
+	}
+}
+@media screen and (min-width:500px) {
+	.verse, .index {
+		font-size:13pt;
+	}
+	table {
+		width:500px;
+	}
+	th, td {
+		font-size:10pt;
+	}
+	h2 {
+		font-size:18pt;
+	}
+}
 
 #jan {
 	background-color: lightgreen;
@@ -58,7 +85,4 @@ th, td {
 }
 #september {
 	background-color: purple;
-}
-.wed {
-	font-size:2.5vw;
 }
