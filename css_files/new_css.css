@@ -6,6 +6,7 @@ body {
 	text-align: center;
 }
 table {
+	display:inline-block;
 	width:100%;
 	table-layout:fixed;
 }
@@ -85,4 +86,7 @@ th, td {
 }
 #september {
 	background-color: purple;
+}
+#october {
+	background-color:tan;
 }
