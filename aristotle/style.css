@@ -1,7 +1,7 @@
 button {
 	border:none;
-	width:18%;
-	height:100px;
+	width:15.0em;
+	height:5em;
 	font-family:georgia;
 	font-weight: bold;
 	background-color:lightgray;
@@ -9,6 +9,7 @@ button {
 	margin-right:5px;
 	margin-bottom:30px;
 	background-color:lightblue;
+	font-size:1.5em;
 }
 button:hover {
 	background-color:white;
@@ -17,6 +18,9 @@ button:hover {
 	transition-duration:.3s;
 	cursor:pointer;
 
+}
+.chbutton {
+	background-color:lightblue;
 }
 body {
 	background-color:#FFFDD0;
@@ -37,11 +41,7 @@ p {
 	margin-left:1.0em;
 	margin-right:1.0em;
 	margin-bottom:1.5em;
-}
-.definitions {
-	text-indent:0em;
-	line-height:2.0em;
-	margin-left:2.5em;
+	font-size:1.2em;
 }
 h3 {
 	margin-left:1.0em;
@@ -50,25 +50,42 @@ div {
 	background-color:#afeeee;
 	margin:2.0em;
 }
+.indexpage {
+	background-color:#FFFDD0;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: center;
+}
+
+}
+.definitions {
+	text-indent:0em;
+	line-height:2.0em;
+	margin-left:2.5em;
+}
 .lowerfirst {
-	margin-left:0em;
-	width:46%;
-	height:7.5em;
+	height:3.5em;
+	font-size:1em;
+	width:32em;
 }
 .lowersecond {
-	margin-left:1.9em;
-	width:46%;
-	height:7.5em;
+	height:3.5em;
+	font-size:1em;
+	width:32em;
+
 }
 .lower { 
 	background-color:#FFFDD0;
-	width:100%;
 	margin-bottom:0em;
+	display:flex;
+	justify-content: center;
 
 }
 .indexbutton {
-	width:50%;
+	height:3.5em;
+	width:40em;
 	margin-top:0em;
+	font-size:1.0em;
 }
 .indexcontainer {
 	margin-top:0em;
@@ -76,4 +93,29 @@ div {
 	display:flex;
 	align-items:center;
 	justify-content: center;
+}
+@media only screen and (max-width:650px) {
+	.chbutton {
+		font-size:1.0em;
+		/*background-color:red;*/
+	}
+	p {
+		font-size:1.0em;
+		text-indent:0em;
+	}
+	.definitions {
+		line-height:1.1em;
+		text-indent:0em;
+
+	}
+}
+@media only screen and (min-width:1250px) {
+	.chbutton {
+		font-size:1.5em;
+		/*background-color: green;*/
+		width:14.0em;
+	}
+	.definitions {
+				text-indent:0em;
+	}
 }
