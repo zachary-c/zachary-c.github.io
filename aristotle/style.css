@@ -94,10 +94,21 @@ div {
 	align-items:center;
 	justify-content: center;
 }
-@media only screen and (max-width:650px) {
+@media only screen and (max-width:800px) {
 	.chbutton {
 		font-size:1.0em;
 		/*background-color:red;*/
+	}
+	.lowerfirst {
+		height:3.5em;
+		font-size:1em;
+		width:32em;
+	}
+	.lowersecond {
+		height:3.5em;
+		font-size:1em;
+		width:32em;
+
 	}
 	p {
 		font-size:1.0em;
@@ -118,4 +129,5 @@ div {
 	.definitions {
 				text-indent:0em;
 	}
+
 }
