@@ -1,0 +1,138 @@
+button {
+	border:none;
+	width:15.0em;
+	height:5em;
+	font-family:georgia;
+	font-weight: bold;
+	background-color:lightgray;
+	margin-left:5px;
+	margin-right:5px;
+	margin-bottom:30px;
+	background-color:lightpink;
+	font-size:1.5em;
+}
+button:hover {
+	background-color:white;
+	box-shadow: 0 0 10px gray;
+	transition-timing-function:ease-in-out;
+	transition-duration:.3s;
+	cursor:pointer;
+
+}
+.chbutton {
+	background-color:lightgreen;
+}
+body {
+	background-color:white;
+}
+h1 {
+	text-align:center;
+	font-family:sans-serif;
+	margin-bottom:50px;
+}
+
+h2 {
+	text-align:center;
+	font-family:sans-serif;
+
+}
+p {
+	text-indent:2.0em;
+	margin-left:1.0em;
+	margin-right:1.0em;
+	margin-bottom:1.5em;
+	font-size:1.2em;
+}
+h3 {
+	margin-left:1.0em;
+}
+
+div {
+	background-color:lightgreen;
+	margin:2.0em;
+}
+.virtues {
+	text-indent:0em;
+	margin-left:1.0em;
+}
+.indexpage {
+	background-color:white;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: center;
+}
+
+}
+.definitions {
+	text-indent:0em;
+	line-height:2.0em;
+	margin-left:2.5em;
+}
+.lowerfirst {
+	height:3.5em;
+	font-size:1em;
+	width:32em;
+}
+.lowersecond {
+	height:3.5em;
+	font-size:1em;
+	width:32em;
+
+}
+.lower { 
+	background-color:#FFFDD0;
+	margin-bottom:0em;
+	display:flex;
+	justify-content: center;
+
+}
+.indexbutton {
+	height:3.5em;
+	width:40em;
+	margin-top:0em;
+	font-size:1.0em;
+}
+.indexcontainer {
+	margin-top:0em;
+	background-color:white;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+}
+@media only screen and (max-width:800px) {
+	.chbutton {
+		font-size:1.0em;
+		/*background-color:red;*/
+	}
+	.lowerfirst {
+		height:3.5em;
+		font-size:1em;
+		width:32em;
+	}
+	.lowersecond {
+		height:3.5em;
+		font-size:1em;
+		width:32em;
+
+	}
+	p {
+		font-size:1.0em;
+		text-indent:0em;
+	}
+	.definitions {
+		line-height:1.1em;
+		text-indent:0em;
+
+	}
+}
+@media only screen and (min-width:1250px) {
+	.chbutton {
+		font-size:1.5em;
+		/*background-color: green;*/
+		width:14.0em;
+	}
+	.definitions {
+				text-indent:0em;
+	}
+
+}
