@@ -50,6 +50,16 @@ h3 {
 div {
 	background-color:lightgreen;
 	margin:2.0em;
+
+}
+img {
+	display:flex;
+}
+.imgcontainer {
+	display:flex;
+	align-items: center;
+	justify-content: center;
+
 }
 .virtues {
 	text-indent:0em;
