@@ -1,0 +1,22 @@
+body {
+	background-color: lightblue;
+	text-align:center;
+	font-family:Georgia;
+}
+p {
+	font-family: Verdana;
+}
+img {
+	padding:1em;
+	padding-bottom:.5em;
+}
+h3 {
+	text-align:left;
+	text-indent:1.0em;
+}
+ul {
+	text-align:left;
+	padding-left:3.0em;
+	line-height:1.5em;
+	padding-bottom:10.0em;
+}
