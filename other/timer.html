@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Timer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<h1 id="date"></h1>
+<h1 id="leaving"></h1>
+<h1 id="returning"></h1>
+
+<script>
+//	var d = new Date("Dec 05 2018");
+//	var x = (d - t)/86400000;
+	var h = new Date("May 6 2020")
+	var t = new Date();
+	var z = (t - h)/3600000;
+	var zed = z/24;
+	//var s =  + x.toFixed(1) + " days until ????";
+	//document.getElementById("leaving").innerHTML = s;
+	var y = "It has been " + z.toFixed(1) + " hours or " + zed.toFixed(1) + " days since Wednesday, May 7, 2020";
+	document.getElementById("returning").innerHTML = y;
+	var today = "The date is " + Date();
+	document.getElementById("date").innerHTML = today;
+</script>
+
+</body>
+</html>
