@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Timer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<!--<h1 id="date"></h1>
+<h1 id="leaving"></h1>-->
+<h2>This timer has been running since 12am on July 31th, 2020</h2>
+<h1 id="timer"></h1><!-- 4 days -->
+
+<script>
+
+
+	var h = new Date("Aug 11 2020")
+	var x = setInterval(function() {
+		var now = new Date().getTime();
+		var distance = now - h;
+
+		var days = Math.floor(distance / (1000*60*60*24));
+		var hours = Math.floor ((distance % (1000*60*60*24)) / (1000*60*60));
+		var minutes = Math.floor ((distance % (1000*60*60)) / (1000*60));
+		var seconds = Math.floor ((distance % (1000*60)) / (1000));
+		
+		document.getElementById("timer").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+		if (days > 90) {
+			clearInterval(x);
+			document.getElementById("timer").innerHTML = "We did it bois!";
+		}
+	}, 1000);
+
+	//var t = new Date();
+	//var z = (t - h)/3600000;
+	//var zed = z/24;
+	//var s =  + x.toFixed(1) + " days until ????";
+	//document.getElementById("leaving").innerHTML = s;
+	//var y = "It has been " + z.toFixed(1) + " hours or " + zed.toFixed(1) + " days since 12AM on Wednesday, July 6, 2020";
+	//document.getElementById("returning").innerHTML = y;
+	var today = "The date is " + Date();
+	document.getElementById("date").innerHTML = today;
+
+
+
+
+</script>
+
+</body>
+</html>
