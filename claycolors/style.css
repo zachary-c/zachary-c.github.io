@@ -1,0 +1,27 @@
+body {
+	background-color: darkorange;
+	text-align:center;
+	font-family:Georgia;
+}
+p {
+	font-family: Verdana;
+}
+img {
+	
+	padding-bottom:.5em;
+	max-width:100%;
+	height:auto;
+}
+h3 {
+	text-align:left;
+	text-indent:1.0em;
+}
+ul {
+	text-align:left;
+	padding-left:3.0em;
+	line-height:1.5em;
+	padding-bottom:5.0em;
+}
+div {
+	padding-bottom:10.0em;
+}
