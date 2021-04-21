@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="HR.png">
+	<title>Raffle Stats</title>
+</head>
+<body>
+	<h1>Chickfila 2020 Christmas Raffle Statistics</h1>
+	<p>What? I actually got around to doing this? It's been four- almost five months!</p>
+	<!--<img src="12weeks.png" alt="look at all those pretty colors. LOOK AT THEM!">/-->
+	<p> Yes, yes, I'm late. Very late, in fact. But alas, I'm a phenomenal procrastinator and just didn't really want to work on it. I did in fact resume working on it again back in March, and then procrastinated it once more until now. Todd's departure has given me a plausible and utterly immovable deadline, one that cannot be changed and is within my completionary power. I also decided that I was going to make just the charts and graphs I felt like making - nobody's paying me to do this, so I get to make the rules. Oh, also, if anyone wants the raw data, boy do I have plenty of raw data for you. Ask me for it. Please, I dare you.</p>
+	<p> For those of you who were not here or have not spent as much time in the last few days as I have mulling over the raffle, here's a quick recap of how it went. Every person who worked any shifts in the prior six months received between 1 and 6 tickets, depending on how much they worked. For example, the fine gentleman and <a href="../claycolors">Polo Aficionado</a> Clay who is here 5+ days a week received 6 tickets. I received 3. The more hours in a 6 month period over the course of 2020, the more tickets. There were then twenty boxes placed in the dining room with pictures and labels of possible prizes. You would write your name on your tickets and put them in whatever box you hoped to win. On Wednesday, December 23rd, Tari and Ryan drew a name from those boxes to receive the prize. Afterwards, I was given access to the boxes and wrote down who put tickets in which boxes and how many, for the purpose of statistical analysis. For the sake of anonymity, I'm not going to be disclosing who put what where, as that seems impolite. </p>
+	<p>Oh, also, as you're reading through this if you feel (as I do) the urge to check things against the tables here, just give it a minute. There's a decent chance I've included it in a fun facts section at the bottom of the page, and it'll save you some effort.</p> 
+    <p> The chart below shows, in bar format, the number of tickets each prize 1-20 received.</p>
+	<img src="./tickets_item/Tickets-Item.png" alt="i actually didn't make this one right away. isn't that strange?"> 
+	<img src="Key_Chart.png" alt="da-ta ta-ble! da-ta ta-ble!"> 
+	<p> This table is by Item # and includes Name, Price and # of Tickets. </p> 
+	<img src="bynum.png" alt="i included price. happy?">
+	<p> This table is in order of most tickets per item. For convenience!</p>
+	<h2>Not Data Tables, Physical Tables</h2>
+	<img src="./tickets_item/tickets-table.png" alt="poor orange">
+	<p>The total tickets each table received is shown above. Table 1 was the leftmost, closest to the playplace, and Table 4 was rightmost, closest to the counter. Items 1-5 were on Table 1, 6-10 on Table 2, and so on. You'll notice that Tables 2 and 4 both received significantly fewer tickets than 1 or 3. I wonder why that might be?</p>
+	<img src="./Price/table_value.png" alt="poor, poor orange">
+	<p> The plot thickens. From this chart you can see that the total value of Table 2 (Price of items 6-10 added up) is actually greater than the total value of Table 1! This just goes to show that $ value isn't necessarily the most sought-after characteristic, which we'll see more of later.</p>
+	<img src= "./Price/tickets_price_table.png" alt="scatterplots are neat">
+	<p> Here you can see that there's not that great of a correlation between Value of Table and # of Tickets received. The correlation coefficient r (magic number where 1=correlated and 0=not correlated) is 0.4817, which is not insignificant. Then again, I do only have four data points. I love scatterplots.</p>
+	<img src="./Price/value_ticket_table.png" alt="bang for your buck">
+	<p> Here's one more chart I made because I could. If you put a ticket in a box on Table 2, it was worth approximately $25.33, whereas on Table 1 it would only be worth $9.93.</p>
+	<h2> The Tickets and their Prices </h2>
+	<img src="./Price/price_tickets_scatter.png" alt="not really at all, surprisingly.">
+	<p> The correlation between # of Tickets and Price an item received isn't really there. Correlation coefficient for this line-of-best-fit is 0.1949, which means there's not much correlation.</p>
+	<img src="./Price/price_tickets_scatter_nogc.png" alt="it's the price we gotta pay and the game we gotta play">
+	<p> I thought to myself, well, the gift cards are quite popular, so I wonder what the graph looks like if you take them out. It looks like this. Correlation coefficient is 0.5357. This is significantly higher and much closer to a legitimate correlation. Also note the two TVs highlighted in red - they received vastly different #s of tickets despite being the same item. My guess as to why this would be is that the TV with more tickets was the first item on Table 1, where more people are likely to see it and see it first. The other TV was fourth on Table 2.</p>
+	<img src="tickets_item/avg_ticket_gc_item.png" alt="the eternal blue-red dichotomy">
+	<p> Because I'm on the subject of splitting by Gift Card vs. Item, here's a graph showing the # of Tickets received for the average Gift Card and Item. There are exactly 10 items and 10 gift cards (the two 8 hour pay certificates count as gift cards), but the Gift Cards have a slight edge.</p>
+	<h2> Tickets, Please! </h2>
+	<img src="ticket%.png" alt="imagine a bar graph. that's it.">
+	<p> Because I had all these numbers, it seemed like a shame for me not to look at the distribution of tickets. You can see it's positively skewed, meaning most people received between 1 and 3 tickets, with fewer getting higher numbers. That's what one would expect, given that we have only a few full time employees and relatively many part- and half-time employees.</p>
+	<img src="./foh_boh/%ticketsFB.png" alt="i did more statistics. what did you expect">
+	<h2> Front and Back </h2>
+	<p> Time to begin more categorization! Here I broke the Percentage of Tickets graph into FOH and BOH. You can see that the FOH spread has a strong positive skew and and the BOH is more normally distributed, even showing a slight negative skew.</p>
+	<img src="./foh_boh/tables.png"> <img src="./foh_boh/tickets_items.png" alt="red and black cool colors tho">
+	<p> Here's two more FOH-BOH split charts - the first is neat and also serves to illustrate that the FOH had more tickets overall than the BOH. The second lets you see which tables were preferred by which half of the restaurant.</p> 
+	<img src="./foh_boh/PR_FOH_BOH.png" alt="participation statistic">
+	<p> Participation rate! I haven't even talked about it yet, but here's the chart. Across the store, 80% particpation rate which is pretty good. I was honestly surprised how close this is between houses.</p>
+	<h2> The Leads and the Team </h2>
+	<img src="./leader_tm/tables.png" alt="i originally used a lighter shade of blue, but it was too hard on the eyes."> <img src="./leader_tm/tickets_item.png" alt="blue for team lead, of course!">
+	<p> These two charts are going to show up a couple more times. Take a difference in the dataset, split it along those lines, check to see about tables and items. Voila! Draw your own conclusions.</p>
+	<img src="./leader_tm/tm_tp.png" alt="i'm really trying hard to find a correlation here"> <img src="./leader_tm/l_tp.png" alt="any luck?">
+	<p> I took the TM and Leader datasets separately and checked for any Ticket-Price correlation. TM R-sq = 0.024 and Leader R-sq = 0.094.</p>
+	<h2> Gender Gap </h2>
+	<img src="./male_female/tables.png" alt="blue and red really just keep showing up, don't they?"> <img src="./male_female/tickets_items.png" alt="look at all the pretty bars">
+	<p> Some of these charts/labels are a bit janky, but Google Sheets isn't perfect and I can't be bothered to fix it by hand.</p>
+	<h2> Schrödinger's College Status </h2>
+	<img src="./student/tables.png" alt="ooh! three colors!"> <img src="./student/tickets_items.png" alt="honestly, sheets is doing better than I thought it would at generating and placing the labels legibly">
+	<p> This one does take some explaining. Big thanks to Tari for getting me a list of people who were/are in college, the red bars. From the remaining names I made a list of highschoolers, which are the yellow bars. The remaining "Other" category includes everyone who isn't on either list. This isn't as accurate as if I sat down and asked everybody what their exact status of post-college/college age/college part time/whatever is, but it's close enough and at least lets us make some inferences about the highschoolers.</p>
+	<img src="./student/tickets_items_hs.png" alt="and i was standin on the side of the road rain fallin on my shoes"> <img src="./student/hs_pie.png" alt="3.141592653 are all the digits i know">
+	<p> The first chart is of the items distribution, which I think allows for some interesting <a href="../toddstats">stats</a>. The second is a donut displaying the spread of tables for highschoolers.</p>
+
+
+	<h3>Greater Knowledge:</h3>
+	<ul>
+		<li>Participation for all employees (excluding directors) was 80%.</li>
+		<li>Managers, Directors and Team Leads, had a participation rate of 100%. Which makes sense.</li>
+		<li>The average number of tickets across the store was 2.892.</li>
+		<li>The average number of tickets for TMs was 2.36.</li>
+		<li>The average number of tickets for Leaders (FOH and BOH) was 3.70.</li>
+		<li>The average number of tickets for FOH was 2.464.</li>
+		<li>The average number of tickets for BOH was 4.22.</li>
+		<li>The item with the most multiples (that is, number of people who put in more than one ticket) was the Amazon Gift Card, with 4 people putting in more than 1 ticket.</li>
+		<li>The Fareway Gift Card and the Air Fryer received 4 and 5 tickets, respectively, all of which were from men.</li>
+		<li>The Polaroid and Starbucks Gift Card received 6 and 10 tickets, respectively, all of which were from women.</li>
+		<li>42 women and 32 men participated in the raffle. In total, all women together received 118 tickets. The men received 96 tickets. However, due to the difference in numbers, 118/42 = 2.81. 96/32 = 3. The average woman received 2.81 tickets and the average man received 3 tickets.</li>
+		<li>Table 3 received nearly 3 times as many tickets from women as from men (53-19).</li>
+		<li>Table 4 received over twice as many tickets from men as from women (26-11).</li>
+		<li>Because I felt like it, I checked to see if anything interesting occured with the Johnsons, all of them being siblings and all. There was absolutely no overlap in what they put tickets in for. Also, none of them put more than one ticket in a box. Most interesting.</li>
+		<li>The Amazon Echo, Fareway Gift Card, Air Fryer, and Walmart Gift Card each received no tickets from highschoolers.</li>
+		<li>The Polaroid, Casey's Gift Card, Starbucks Gift Card, Cy's Locker Room Gift Card, and Walmart Gift Card all only received tickets from the FOH.</li>
+		<li>Item #2, 8 hours of pay, received 0 tickets from Leaders. However, Item #12, also 8 hours of pay, received 4 tickets from leaders.</li>
+		<li>The Amazon Echo, Walmart Gift Card and Fareway Gift Card both received no tickets from Team Members.</li>
+		<li>The most valuable item by simple dollar value was the <a href="https://www.amazon.com/Beats-Studio3-Wireless-Over-Ear-Headphones/dp/B075G56GZD">"Beats Studio3 Wireless Over-Ear Noise-Cancelling Headphones - Matte Black"</a> at a $350 list price as of 4/20/2021. However, it's clear nobody looked that up because it received only 9 tickets, coming in a distant twelfth.</li>
+		<li>When I originally began work on this project back in December and gathered price data, many of the items were on sale. I elected then to go with just the list price, because that's <i>probably</i> a better metric of the actual value of the item. I'm guessing Tari and Ryan planned this at least few days in advance and managed to take advantage of a Black Friday Sale or two - pure speculation on my part.</li> 
+		<li>The Amazon Gift card coming in at #1 with 24 tickets shouldn't be particularly surprising, given it's the most "free money" prize.</li>\
+
+	</ul>
+	<h3>Additionally:</h3>
+	<div class="bottom">
+	<p> Major thanks of course to Tari who provided all the additional information I needed. Thanks as well to Clay for moral support while I was counting the tickets on the 23rd. Mad shoutouts to my mom for proofreading this too. All errors are mine, prboably.</p>
+</div>
+</body>
+</html>
