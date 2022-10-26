@@ -1,50 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Timer</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Timer</title>
 </head>
-<body>
+<body style="background-color:bisque;">
 
-<!--<h1 id="date"></h1>
-<h1 id="leaving"></h1>-->
-<h2>This timer has been running since 12am on July 31th, 2020</h2>
-<h1 id="timer"></h1><!-- 4 days -->
+    <div id="timer" style="width:auto;text-align:center;padding-top:auto;font-size: 13vw;"></div>
 
 <script>
 
+document.getElementById("timer").style.lineHeight = screen.height*(6/8) + "px";
 
-	var h = new Date("Aug 11 2020")
-	var x = setInterval(function() {
-		var now = new Date().getTime();
-		var distance = now - h;
+var THE_DATE = new Date(2023, 0, 15);
 
-		var days = Math.floor(distance / (1000*60*60*24));
-		var hours = Math.floor ((distance % (1000*60*60*24)) / (1000*60*60));
-		var minutes = Math.floor ((distance % (1000*60*60)) / (1000*60));
-		var seconds = Math.floor ((distance % (1000*60)) / (1000));
-		
-		document.getElementById("timer").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
-		if (days > 90) {
-			clearInterval(x);
-			document.getElementById("timer").innerHTML = "We did it bois!";
-		}
-	}, 1000);
+function fillDate() {
+    let t = THE_DATE - Date.now();
 
-	//var t = new Date();
-	//var z = (t - h)/3600000;
-	//var zed = z/24;
-	//var s =  + x.toFixed(1) + " days until ????";
-	//document.getElementById("leaving").innerHTML = s;
-	//var y = "It has been " + z.toFixed(1) + " hours or " + zed.toFixed(1) + " days since 12AM on Wednesday, July 6, 2020";
-	//document.getElementById("returning").innerHTML = y;
-	var today = "The date is " + Date();
-	document.getElementById("date").innerHTML = today;
+    let days = String(Math.trunc((t/1000/60/60/24)%365)).padStart(3, '0');
+    let hours = String(Math.trunc((t/1000/60/60)%24)).padStart(2, '0');
+    let minutes = String(Math.trunc((t/1000/60)%60)).padStart(2, '0');
+    let seconds = String(Math.trunc((t/1000)%60)).padStart(2, '0');
+    let centi = String(t%1000).padStart(2, '0').slice(0, 2);
+    document.getElementById("timer").innerText =  days + ':' + hours + ':' + minutes + ':' + seconds + ':' + centi;
+}
 
+var interval = 5; // ms
+var expected = Date.now() + interval;
+setTimeout(step, interval);
+function step() {
+    var dt = Date.now() - expected; // the drift (positive for overshooting)
+    if (dt > interval) {
+        // something really bad happened. Maybe the browser (tab) was inactive?
+        // possibly special handling to avoid futile "catch up" run
+    }
+    fillDate();
 
-
+    expected += interval;
+    setTimeout(step, Math.max(0, interval - dt)); // take into account drift
+}
 
 </script>
-
 </body>
-</html>
+</html> 
