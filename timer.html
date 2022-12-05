@@ -12,6 +12,7 @@
 document.getElementById("timer").style.lineHeight = screen.height*(6/8) + "px";
 
 var THE_DATE = new Date(2023, 0, 13);
+THE_DATE.setHours(13);
 
 function fillDate() {
     let t = THE_DATE - Date.now();
