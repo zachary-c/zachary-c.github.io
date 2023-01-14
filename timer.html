@@ -15,7 +15,7 @@ var THE_DATE = new Date(2023, 0, 13);
 THE_DATE.setHours(13);
 
 function fillDate() {
-    let t = THE_DATE - Date.now();
+    let t =  Date.now() - THE_DATE;
 
     let days = String(Math.trunc((t/1000/60/60/24)%365)).padStart(3, '0');
     let hours = String(Math.trunc((t/1000/60/60)%24)).padStart(2, '0');
