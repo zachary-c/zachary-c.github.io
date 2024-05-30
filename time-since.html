@@ -1,15 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width,initial-scale=1" />.
 <title>Time Since</title>
+<style>
+body {
+    background-color:#1d1d1d;
+}
+div {
+    width: auto;
+    color: white;
+    text-align: center;
+    padding-top: auto;
+    font-size: 13vw;
+    font-family: Trebuchet MS;
+    line-height: 500px;
+}
+p {
+    margin: .15rem;
+    font-size: 1rem;
+    text-wrap: wrap;
+    text-align: center;
+    color: white;
+}
+a {
+    color: #1d1d1d;
+    border: 1px solid white;
+    background-color: white;
+    display: block;
+    width: 50px;
+    text-decoration: none;
+    margin: 0 auto 1rem;
+    padding: .25rem .75rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+a:hover {
+    transform: scale(1.03);
+}
+#verse {
+    margin-top:1rem;
+}
+</style>
 </head>
-<body style="background-color:bisque;">
-
-    <div id="timer" style="width:auto;text-align:center;padding-top:auto;font-size: 13vw;font-family:Trebuchet MS;"></div>
-
+<body>
+    <div id="timer"></div>
+    <a href="https://open.spotify.com/playlist/2lEGfnhNljAGaqLIEkS20t?si=12f69ca572724654">Playlist</a>
+    <p>Bless the Lord, oh my soul</p>
+    <p>Oh my soul</p>
+    <p>Worship His holy name</p>
+    <p>Sing like never before, O my soul</p>
+    <p>I'll worship Your holy name</p>
+    <p id="verse">"Therefore, if anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come!" - 2 Corinthians 5:17</p>
 <script>
 
-document.getElementById("timer").style.lineHeight = screen.height*(6/8) + "px";
+//document.getElementById("timer").style.lineHeight = screen.height*(6/8) + "px";
 
 var THE_DATE = new Date(2024, 4, 29);
 THE_DATE.setHours(16);
